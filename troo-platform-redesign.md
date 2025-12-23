@@ -335,5 +335,56 @@ This architecture ensures Troo can:
 * Scale to multiple products
 * Adapt to future business models without rework
 
+
+
+                   ┌─────────────────────────────┐
+                   │        Client Apps           │
+                   │─────────────────────────────│
+                   │ TrooX Customer Web (QR)      │
+                   │ TrooX KDS / ODS Screens      │
+                   │ TrooX Kiosk                  │
+                   │ Gogrub Customer Web          │
+                   └───────────────┬─────────────┘
+                                   │
+                        HTTP / WebSockets
+                                   │
+         ┌─────────────────────────▼─────────────────────────┐
+         │                TROO ORDERS SERVICE                  │
+         │                   (FastAPI)                         │
+         │─────────────────────────────────────────────────────│
+         │  • Menu & Pricing Engine                             │
+         │  • Orders / Tickets Core                             │
+         │  • TrooX Order Flow (QR / Assets)                    │
+         │  • Gogrub Order Flow (Merchant Storefront)           │
+         │  • Fulfillment Logic                                 │
+         │  • KDS / ODS Realtime Events                         │
+         │  • Outbox (POS / Printers / Events)                  │
+         └───────────────┬───────────────┬────────────────────┘
+                         │               │
+                 HTTP APIs│               │Events / Messages
+                         │               │
+        ┌────────────────▼───┐     ┌─────▼──────────────────┐
+        │   TROO CORE         │     │   INTEGRATIONS LAYER   │
+        │  (Django Platform)  │     │ (Workers / Async Jobs)│
+        │────────────────────│     │────────────────────────│
+        │ • Businesses        │     │ • Printers             │
+        │ • Branches          │     │ • POS Sync             │
+        │ • Staff & RBAC      │     │ • Notifications        │
+        │ • Assets (QRs)      │     │                        │
+        │ • Business Settings │     └────────────────────────┘
+        └───────────┬────────┘
+                    │
+                    │
+        ┌───────────▼───────────┐
+        │  PAYMENT SERVICE       │
+        │  (Existing / External) │
+        │───────────────────────│
+        │ • Payment Initiation   │
+        │ • Provider Webhooks    │
+        │ • Verification         │
+        └───────────────────────┘
+
+
 ---
+
 
