@@ -21,7 +21,7 @@ This is aligned with the original OCTO EMR scope , but optimized for **budget re
 
 ### 🔷 MVP Phase 1: Hospital & Staff Foundation
 
-**Duration:** 3 weeks
+**Duration:** 4 weeks
 **Cost:** **₦4,000,000**
 
 **Components**
@@ -41,7 +41,7 @@ This is aligned with the original OCTO EMR scope , but optimized for **budget re
 
 ### 🔷 MVP Phase 2: Patient Onboarding & Registry
 
-**Duration:** 2 weeks
+**Duration:** 3 weeks
 **Cost:** **₦2,500,000**
 
 **Components**
@@ -79,7 +79,7 @@ This is aligned with the original OCTO EMR scope , but optimized for **budget re
 
 ### 🔷 MVP Phase 4: Appointments & Scheduling
 
-**Duration:** 2 weeks
+**Duration:** 3 weeks
 **Cost:** **₦3,000,000**
 
 **Components**
@@ -98,7 +98,7 @@ This is aligned with the original OCTO EMR scope , but optimized for **budget re
 
 ### 🔷 MVP Phase 5: Internal Tasks & Collaboration (Lite)
 
-**Duration:** 2 weeks
+**Duration:** 4 weeks
 **Cost:** **₦3,000,000**
 
 **Components**
@@ -128,7 +128,7 @@ At this point, **OCTO is commercially deployable**.
 
 ### 🔷 Phase 6: Real-Time Communication System
 
-**Duration:** 2 weeks
+**Duration:** 3 weeks
 **Cost:** **₦2,500,000**
 
 **Components**
@@ -166,7 +166,7 @@ At this point, **OCTO is commercially deployable**.
 
 ### 🔷 Phase 8: Analytics & Reporting Engine
 
-**Duration:** 2 weeks
+**Duration:** 3 weeks
 **Cost:** **₦2,500,000**
 
 **Components**
@@ -185,7 +185,7 @@ At this point, **OCTO is commercially deployable**.
 
 ### 🔷 Phase 9: OCR & Medical Record Automation
 
-**Duration:** 2 weeks
+**Duration:** 3 weeks
 **Cost:** **₦2,000,000**
 
 **Components**
